@@ -1,0 +1,55 @@
+---
+import SiteLayout from "../layouts/SiteLayout.astro";
+
+const title = "Product — SimReact";
+const description =
+  "Understand what SimReact is, what it isn’t, and how synthetic district personas help you de-risk campaign messages.";
+---
+
+<SiteLayout title={title} description={description} pathname="/product">
+  <section class="section">
+    <div class="section-wide reveal">
+      <h2 class="font-serif text-[24px] text-ink mb-3">
+        What SimReact is
+      </h2>
+      <p class="text-[13px] text-textSub max-w-3xl mb-6">
+        SimReact is a diagnostic message-testing system. We simulate how district-specific voter archetypes parse your language, tone, and framing.
+        It’s not polling or persuasion modeling — it’s an early-signal layer that helps you avoid avoidable mistakes.
+      </p>
+
+      <div class="grid gap-6 md:grid-cols-2">
+        <div>
+          <h3 class="font-semibold text-[16px] text-ink mb-2">
+            What it isn’t
+          </h3>
+          <ul class="list-disc pl-5 text-[13px] text-textSub space-y-1">
+            <li>No voter files.</li>
+            <li>No predictions of vote share.</li>
+            <li>No dark-pattern optimization.</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-[16px] text-ink mb-2">
+            Deliverables (every run)
+          </h3>
+          <ul class="list-disc pl-5 text-[13px] text-textSub space-y-1">
+            <li>Executive PDF (Level 1)</li>
+            <li>Aggregate PDF (Level 2)</li>
+            <li>CSV dataset (Level 3)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-6">
+        <h3 class="font-semibold text-[16px] text-ink mb-2">
+          Common use-cases
+        </h3>
+        <ul class="list-disc pl-5 text-[13px] text-textSub space-y-1">
+          <li>Pre-publish screen for posts and mailers</li>
+          <li>Tone check for sensitive statements</li>
+          <li>A/B framing on stump lines</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</SiteLayout>

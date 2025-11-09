@@ -1,0 +1,19 @@
+{
+  "name": "simreact-marketing-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^4.15.11",
+    "@astrojs/tailwind": "^5.1.0",
+    "@fontsource/inter": "^5.0.18",
+    "@fontsource/source-serif-4": "^5.0.8"
+  }
+}

@@ -1,0 +1,22 @@
+---
+import SiteLayout from "../layouts/SiteLayout.astro";
+
+const title = "Page not found — SimReact";
+const description = "The page you’re looking for isn’t here. Return to SimReact home.";
+---
+
+<SiteLayout title={title} description={description} pathname="/404">
+  <section class="section">
+    <div class="section-wide reveal text-center space-y-3">
+      <h1 class="font-serif text-[32px] text-ink">
+        Page not found
+      </h1>
+      <p class="text-[13px] text-textSub">
+        The page you’re looking for doesn’t exist or has moved.
+      </p>
+      <a href="/" class="btn-primary">
+        Back to Home
+      </a>
+    </div>
+  </section>
+</SiteLayout>

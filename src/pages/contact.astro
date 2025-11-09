@@ -1,0 +1,163 @@
+---
+import SiteLayout from "../layouts/SiteLayout.astro";
+
+const title = "Contact — SimReact";
+const description =
+  "Request a pilot or send a question. Share your draft and district, and we’ll confirm scope and timeline.";
+---
+
+<SiteLayout title={title} description={description} pathname="/contact">
+  <section class="section">
+    <div class="section-wide reveal max-w-3xl">
+      <h2 class="font-serif text-[24px] text-ink mb-3">
+        Request a pilot or ask a question
+      </h2>
+      <p class="text-[13px] text-textSub mb-5">
+        Send a draft (post, mailer, or stump line) and the district. We’ll confirm scope and timeline.
+      </p>
+
+      <form
+        class="bg-white border border-borderSoft rounded-xl p-5 shadow-subtle space-y-4"
+        aria-label="Request a pilot or ask a question form"
+        onsubmit="event.preventDefault(); const f=this; const r=f.reportValidity && f.reportValidity(); if(r===false){return;} const t=document.getElementById('contact-success'); if(t){t.classList.remove('hidden');} const m=f.elements['email']?.value || ''; window.location.href = `mailto:contact@simreact.com?subject=SimReact%20Pilot%20Inquiry&body=Requested%20via%20simreact.com`; "
+      >
+        <div class="grid gap-4 md:grid-cols-2">
+          <div>
+            <label for="name" class="block text-[11px] font-medium text-slate-700 mb-1">Name</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              required
+              class="w-full rounded-lg border border-borderSoft px-3 py-2 text-[13px] focus-visible:ring-accent"
+            />
+          </div>
+          <div>
+            <label for="org" class="block text-[11px] font-medium text-slate-700 mb-1">Org</label>
+            <input
+              id="org"
+              name="org"
+              type="text"
+              required
+              class="w-full rounded-lg border border-borderSoft px-3 py-2 text-[13px]"
+            />
+          </div>
+        </div>
+
+        <div class="grid gap-4 md:grid-cols-2">
+          <div>
+            <label for="email" class="block text-[11px] font-medium text-slate-700 mb-1">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              required
+              class="w-full rounded-lg border border-borderSoft px-3 py-2 text-[13px]"
+            />
+          </div>
+          <div>
+            <label for="district" class="block text-[11px] font-medium text-slate-700 mb-1">District</label>
+            <input
+              id="district"
+              name="district"
+              type="text"
+              required
+              placeholder="e.g., CO-03, TX-15"
+              class="w-full rounded-lg border border-borderSoft px-3 py-2 text-[13px]"
+            />
+          </div>
+        </div>
+
+        <div class="grid gap-4 md:grid-cols-2">
+          <div>
+            <label for="messageType" class="block text-[11px] font-medium text-slate-700 mb-1">Message Type</label>
+            <select
+              id="messageType"
+              name="messageType"
+              required
+              class="w-full rounded-lg border border-borderSoft px-3 py-2 text-[13px] bg-white"
+            >
+              <option value="">Select…</option>
+              <option value="social-post">Social post</option>
+              <option value="mailer">Mailer</option>
+              <option value="stump-line">Stump line</option>
+              <option value="press-statement">Press statement</option>
+              <option value="video-script">Video script</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div>
+            <label for="promo" class="block text-[11px] font-medium text-slate-700 mb-1">Promo Code</label>
+            <input
+              id="promo"
+              name="promo"
+              type="text"
+              placeholder="e.g., PILOT-INTRO"
+              class="w-full rounded-lg border border-borderSoft px-3 py-2 text-[13px]"
+            />
+          </div>
+        </div>
+
+        <div>
+          <label for="notes" class="block text-[11px] font-medium text-slate-700 mb-1">Notes</label>
+          <textarea
+            id="notes"
+            name="notes"
+            rows="4"
+            required
+            class="w-full rounded-lg border border-borderSoft px-3 py-2 text-[13px] resize-y"
+            placeholder="Paste your draft (post, mailer, stump line) and any key context."
+          ></textarea>
+        </div>
+
+        <div>
+          <label class="block text-[11px] font-medium text-slate-700 mb-1">
+            Upload placeholder
+          </label>
+          <div class="w-full rounded-lg border border-dashed border-borderSoft px-3 py-3 text-[11px] text-slate-500 flex items-center justify-between">
+            <span>File upload endpoint to be connected here.</span>
+            <!-- // FORM_HOOK: wire real upload here -->
+            <button
+              type="button"
+              class="px-3 py-1.5 rounded-full border border-slate-300 text-[10px] text-slate-700 bg-white"
+            >
+              Choose file
+            </button>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-3">
+          <button type="submit" class="btn-primary">
+            Submit
+          </button>
+          <a
+            href="mailto:contact@simreact.com"
+            class="text-[11px] text-slate-600"
+          >
+            Or email details to contact@simreact.com
+          </a>
+        </div>
+
+        <p
+          id="contact-success"
+          class="hidden text-[11px] text-success mt-1"
+        >
+          Thanks — we’ll reply within one business day.
+        </p>
+      </form>
+
+      <div class="mt-4">
+        <p class="text-[11px] text-textSub mb-1">
+          Prefer a quick call?
+        </p>
+        <button
+          type="button"
+          class="btn-secondary"
+        >
+          Open Calendly (placeholder)
+        </button>
+        <!-- // CALENDLY_HOOK: insert real Calendly embed or link here -->
+      </div>
+    </div>
+  </section>
+</SiteLayout>

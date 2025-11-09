@@ -1,0 +1,80 @@
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/source-serif-4/500.css";
+@import "@fontsource/source-serif-4/600.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  @apply bg-bgNeutral text-textMain font-sans antialiased;
+}
+
+body {
+  @apply min-h-screen;
+}
+
+a {
+  @apply text-accent underline-offset-2;
+}
+
+a:hover {
+  @apply underline;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-accent text-white text-sm font-medium shadow-sm hover:bg-blue-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-accent focus-visible:ring-offset-bgNeutral transition-colors;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center px-5 py-2.5 rounded-full border border-ink text-ink text-sm font-medium hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-ink focus-visible:ring-offset-bgNeutral transition-colors;
+}
+
+.chip {
+  @apply inline-flex items-center rounded-full border border-slate-300 bg-white px-3 py-1 text-[11px] font-medium uppercase tracking-wide text-slate-600;
+}
+
+.section {
+  @apply py-12 md:py-16;
+}
+
+.section-narrow {
+  @apply max-w-5xl mx-auto px-4 md:px-6;
+}
+
+.section-wide {
+  @apply max-w-6xl mx-auto px-4 md:px-6;
+}
+
+/* Focus styles for all interactive elements */
+:where(a, button, [role="button"], input, select, textarea) {
+  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-bgNeutral;
+}
+
+/* Simple fade-in on scroll (no heavy motion) */
+.reveal {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Reduced motion respect */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    transition: none;
+    transform: none;
+    opacity: 1;
+  }
+}

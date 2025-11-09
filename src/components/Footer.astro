@@ -1,0 +1,66 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="border-t border-borderSoft mt-12">
+  <div class="max-w-6xl mx-auto px-4 md:px-6 py-8 md:py-10 flex flex-col md:flex-row gap-6 md:gap-10 justify-between text-xs text-slate-600">
+    <div class="space-y-1.5">
+      <div class="flex items-center gap-2">
+        <div class="w-6 h-6 rounded-md border border-ink flex items-center justify-center text-[9px] font-semibold text-ink">
+          SR
+        </div>
+        <span class="font-serif text-[16px] text-ink">SimReact</span>
+      </div>
+      <p class="max-w-xs">
+        Address line for SimReact or partner firm<br />
+        City, State ZIP
+      </p>
+      <p>
+        <a href="mailto:contact@simreact.com" class="text-accent hover:underline">
+          contact@simreact.com
+        </a>
+      </p>
+    </div>
+
+    <div class="flex-1 grid grid-cols-2 sm:grid-cols-3 gap-4 md:gap-6">
+      <div class="space-y-2">
+        <h3 class="font-semibold text-slate-800 text-[11px] tracking-wide uppercase">Navigate</h3>
+        <ul class="space-y-1.5">
+          <li><a href="/product" class="hover:text-ink">Product</a></li>
+          <li><a href="/how-it-works" class="hover:text-ink">How it works</a></li>
+          <li><a href="/pricing" class="hover:text-ink">Pricing</a></li>
+          <li><a href="/samples" class="hover:text-ink">Samples</a></li>
+        </ul>
+      </div>
+      <div class="space-y-2">
+        <h3 class="font-semibold text-slate-800 text-[11px] tracking-wide uppercase">Company</h3>
+        <ul class="space-y-1.5">
+          <li><a href="/about" class="hover:text-ink">About</a></li>
+          <li><a href="/faq" class="hover:text-ink">FAQ</a></li>
+          <li><a href="/contact" class="hover:text-ink">Contact</a></li>
+        </ul>
+      </div>
+      <div class="space-y-2">
+        <h3 class="font-semibold text-slate-800 text-[11px] tracking-wide uppercase">Policies</h3>
+        <ul class="space-y-1.5">
+          <li><a href="#" class="hover:text-ink">Ethical Use Policy</a></li>
+          <li><a href="#" class="hover:text-ink">Privacy</a></li>
+        </ul>
+        <div class="flex gap-2 pt-1">
+          <span class="w-5 h-5 rounded-full border border-slate-400" aria-hidden="true"></span>
+          <span class="w-5 h-5 rounded-full border border-slate-400" aria-hidden="true"></span>
+          <span class="w-5 h-5 rounded-full border border-slate-400" aria-hidden="true"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="md:text-right space-y-1">
+      <p class="text-[10px] text-slate-500">
+        Synthetic audience testing for modern campaigns and comms teams.
+      </p>
+      <p class="text-[10px] text-slate-500">
+        © {year} SimReact. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>

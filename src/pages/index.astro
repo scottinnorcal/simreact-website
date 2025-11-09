@@ -1,0 +1,49 @@
+---
+import SiteLayout from "../layouts/SiteLayout.astro";
+import Hero from "../components/Hero.astro";
+import StatBar from "../components/StatBar.astro";
+import FeatureGrid from "../components/FeatureGrid.astro";
+import TableMini from "../components/TableMini.astro";
+import CTA from "../components/CTA.astro";
+import Testimonial from "../components/Testimonial.astro";
+
+const pageTitle = "SimReact — District-Specific Synthetic Audience Testing";
+const description =
+  "Run your message past a district-tuned synthetic focus group before you publish. Executive brief, aggregate summary, and full CSV in 24–48h.";
+---
+
+<SiteLayout title={pageTitle} description={description} pathname="/">
+  <Hero />
+  <StatBar />
+  <FeatureGrid />
+
+  <section class="section">
+    <div class="section-wide reveal">
+      <h2 class="font-serif text-[22px] text-ink mb-2">
+        Why campaigns use SimReact
+      </h2>
+      <ul class="list-disc pl-5 text-[13px] text-textSub space-y-1.5 max-w-xl">
+        <li>Pre-flight check before posts, mailers, and scripts go live.</li>
+        <li>Reduce tone misfires that cost time and trust.</li>
+        <li>Localize framing against real district context.</li>
+        <li>Faster than polling when you need signal this week.</li>
+        <li>Uses compliant diagnostic language only.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-wide">
+      <TableMini />
+    </div>
+  </section>
+
+  <Testimonial />
+
+  <CTA
+    title="Run your next message past the district first."
+    body="Share a draft and the district, and we’ll return a concise, traceable brief within 24–48 hours."
+    primaryLabel="Request a Pilot"
+    primaryHref="/contact"
+  />
+</SiteLayout>

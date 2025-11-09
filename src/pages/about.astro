@@ -1,0 +1,24 @@
+---
+import SiteLayout from "../layouts/SiteLayout.astro";
+
+const title = "About — SimReact";
+const description =
+  "SimReact is built by practitioners for practitioners, focused on clarity, respect for voters, and transparent diagnostic methods.";
+---
+
+<SiteLayout title={title} description={description} pathname="/about">
+  <section class="section">
+    <div class="section-wide reveal space-y-4">
+      <h2 class="font-serif text-[24px] text-ink">
+        Built by practitioners for practitioners
+      </h2>
+      <p class="text-[13px] text-textSub max-w-3xl">
+        SimReact was created to give comms teams a practical, fast way to rehearse messages with district-tuned audiences.
+        We believe in clarity, respect for voters, and transparent methods.
+      </p>
+      <p class="text-[13px] text-textSub">
+        <span class="font-semibold text-ink">Scott Ortiz</span>, Founder — <a href="mailto:contact@simreact.com" class="text-accent hover:underline">contact@simreact.com</a>
+      </p>
+    </div>
+  </section>
+</SiteLayout>

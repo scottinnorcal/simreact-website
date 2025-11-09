@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="32" viewBox="0 0 120 32" role="img" aria-label="SimReact logo placeholder">
+  <rect x="2" y="6" width="20" height="20" rx="6" ry="6" fill="none" stroke="#1C2B3A" stroke-width="1.4"/>
+  <text x="12" y="19" text-anchor="middle" font-size="9" fill="#1C2B3A" font-family="system-ui, -apple-system, BlinkMacSystemFont, sans-serif">SR</text>
+  <text x="28" y="18" font-size="13" fill="#1C2B3A" font-family="Georgia, 'Times New Roman', serif">SimReact</text>
+</svg>

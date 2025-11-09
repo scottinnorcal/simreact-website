@@ -1,0 +1,12 @@
+---
+import SiteLayout from "../layouts/SiteLayout.astro";
+import PricingTable from "../components/PricingTable.astro";
+
+const title = "Pricing — SimReact";
+const description =
+  "Simple pricing that fits campaign cadence, from pilot runs to state and enterprise coverage.";
+---
+
+<SiteLayout title={title} description={description} pathname="/pricing">
+  <PricingTable />
+</SiteLayout>

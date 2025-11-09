@@ -1,0 +1,73 @@
+---
+import SiteLayout from "../layouts/SiteLayout.astro";
+
+const title = "FAQ — SimReact";
+const description =
+  "Answers to common questions about how SimReact works, what data it uses, and how campaigns engage with it.";
+---
+
+<SiteLayout title={title} description={description} pathname="/faq">
+  <section class="section">
+    <div class="section-wide reveal space-y-4">
+      <h2 class="font-serif text-[24px] text-ink">
+        Frequently asked questions
+      </h2>
+
+      <div class="space-y-3 text-[13px] text-textSub">
+        <div>
+          <h3 class="font-semibold text-ink text-[14px]">
+            Is this polling?
+          </h3>
+          <p>
+            No. SimReact is a diagnostic read on tone and framing across modeled personas; it does not predict vote share.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-semibold text-ink text-[14px]">
+            What data do you use?
+          </h3>
+          <p>
+            District context (economy, issues, geography) + calibrated archetypes; no voter files or personal data.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-semibold text-ink text-[14px]">
+            How fast is a run?
+          </h3>
+          <p>
+            24–48 hours for most tests.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-semibold text-ink text-[14px]">
+            What do we receive?
+          </h3>
+          <p>
+            Executive brief, aggregate summary, full CSV.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-semibold text-ink text-[14px]">
+            Can we test video or mailers?
+          </h3>
+          <p>
+            Yes. Provide script or transcript and reference visuals.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-semibold text-ink text-[14px]">
+            Do you handle compliance?
+          </h3>
+          <p>
+            We operate as a research/diagnostic vendor. For campaign-specific questions, consult counsel.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</SiteLayout>

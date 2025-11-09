@@ -1,0 +1,33 @@
+---
+interface Props {
+  title: string;
+  body: string;
+  primaryLabel: string;
+  primaryHref: string;
+}
+
+const { title, body, primaryLabel, primaryHref } = Astro.props;
+---
+
+<section class="section">
+  <div class="section-wide reveal">
+    <div class="bg-ink text-white rounded-2xl px-6 py-6 md:px-8 md:py-7 flex flex-col md:flex-row md:items-center md:justify-between gap-4 shadow-subtle">
+      <div class="space-y-2">
+        <h2 class="font-serif text-[22px] md:text-[24px]">
+          {title}
+        </h2>
+        <p class="text-[12px] md:text-[13px] text-slate-200 max-w-xl">
+          {body}
+        </p>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-3 items-start sm:items-center">
+        <a href={primaryHref} class="btn-primary bg-white text-ink hover:bg-slate-100">
+          {primaryLabel}
+        </a>
+        <span class="text-[10px] text-slate-300">
+          No polling, no voter files — diagnostic only.
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
