@@ -1,2 +1,14 @@
---- 
-import SiteLayout from "../layouts/SiteLayout
+---
+import SiteLayout from "../layouts/SiteLayout.astro";
+import TableMini from "../components/TableMini.astro";
+
+const title = "Samples — SimReact";
+const description =
+  "See anonymized examples of SimReact output, including Message Resonance Brief and sentiment tables.";
+
+---
+
+<SiteLayout title={title} description={description} pathname="/samples">
+  <section class="section">
+    <div class="section-wide reveal space-y-4">
+      <h2 class="font-serif text-[24px] text
