@@ -4,7 +4,7 @@ import TableMini from "../components/TableMini.astro";
 
 const title = "Samples — SimReact";
 const description =
-  "See anonymized examples of SimReact output, including executive summaries and sentiment tables.";
+  "See anonymized examples of SimReact output, including Message Resonance Brief and sentiment tables.";
 ---
 
 <SiteLayout title={title} description={description} pathname="/samples">
@@ -31,12 +31,22 @@ const description =
         </blockquote>
       </div>
 
-      <div class="mt-4">
+      <div class="mt-4 flex flex-wrap gap-3">
         <a
-          href="/assets/sample.pdf"
+          href="https://storage.googleapis.com/msgsndr/H57KZKbkkAZ2rf3d1kyu/media/6916d55f6c431e3b19b7b07e.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           class="btn-secondary"
         >
-          Download sample PDF
+          Download Message Resonance Brief (PDF)
+        </a>
+        <a
+          href="https://storage.googleapis.com/msgsndr/H57KZKbkkAZ2rf3d1kyu/media/6916d5636c431e1669b7b0bf.csv"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-secondary"
+        >
+          Download Full Dataset (CSV)
         </a>
       </div>
     </div>

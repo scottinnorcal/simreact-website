@@ -1,0 +1,16 @@
+<svg width="280" height="48" viewBox="0 0 280 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Improved transparent logo: Sleek modern SR badge + enhanced typography -->
+  <defs>
+    <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="currentColor" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="currentColor"/>
+    </linearGradient>
+  </defs>
+  <g stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">
+    <rect x="10" y="10" width="28" height="28" rx="14" fill="url(#badgeGrad)"/>
+    <circle cx="24" cy="24" r="8" fill="none"/>
+    <path d="M18 20 l4 0 M18 24 l4 0 M20 18 l0 4 M22 26 l-2 0" stroke-width="1.2"/>
+  </g>
+  <text x="48" y="27" font-family="serif" font-size="28" font-weight="700" fill="currentColor" letter-spacing="-0.04em" font-kerning="true">SimReact</text>
+  <text x="48" y="42" font-family="sans-serif" font-size="10" font-weight="700" fill="currentColor" letter-spacing="0.15em" text-transform="uppercase" font-kerning="true">Synthetic Audience Testing</text>
+</svg>
